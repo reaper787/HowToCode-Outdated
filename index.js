@@ -9,7 +9,5 @@ $(document).ready(function(){
    function(){
    $(this).hide();
    }); 
-            $("button").click(function(){
-             alert(hi again welcome welcome welcome);           
-            })
+            
 });
