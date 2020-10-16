@@ -131,8 +131,12 @@ function intro(){
             <p>
             <h1 id="end-of-document"> now you know the basic's of html!!!</h1>
             
-            <button onclick="revealMessage()">
-              <p>
+            <button id = clicker>CSS</button>
+            <div id= alone></div> 
+            <script>
+                var click1 = document.getElementById("clicker");
+                var onButtonClick = function() {
+              document.getElementById("alone).innerHTML = "<p>
            
             <h1 id="css">css 101</h1><br>
                         to star evry Css code you use &ltstyle&gt then write a closing bracket like this &lt/style&gt 
@@ -144,11 +148,8 @@ function intro(){
             <h2> background </h2><br>
             for background you do background-color:rbg();then put in the color value like this background-color:rbg(20, 300, 500);<br>
             <h1>see ya latter alligator</h1>
-            for more learning go to<a href="https://www.khanacademy.org/computing/computer-programming">khan academy</a>
+            for more learning go to<a href="https://www.khanacademy.org/computing/computer-programming"> khan academy</a>
                             
                             </p>
-        </body>
-    </head>
-</html>
-
-
+        ";
+                }click.addEventListener("click", onButtonClick);</script>
