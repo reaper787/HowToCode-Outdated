@@ -3,7 +3,7 @@
 <html>
     <head>
         <body onload="intro()">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          
             
 
 <script>
@@ -86,9 +86,9 @@ function intro(){
             </head>
         <h1 id="story-title">how to code html 101</h1>
         <a href= "#css">CSS</a>
-        <h3 id ="story-heading1">lists</h3>
+        <h3 id ="story-heading1" class="body">lists</h3>
         
-        <body>
+        <body class="body">
             lists are made with &ltol&gt or &ltul&gt. &ltol&gt is the numberd list and &ltul&gt is the bullet point list.
             <h4>orderd list</h4>
         </body>
@@ -100,21 +100,21 @@ function intro(){
             <li>how to code
         </ul>
         <h3 id="story-heading2">paragraph</h3>
-        <body>
+        <body class="body">
             paragraphs are made with &ltbody&gt. inside body you put &ltp&gt. to make a word bold you put &ltstrong&gt &lt/strong&gt. to make it italic you do &ltem&gt &lt/em&gt<br>
             but you only use that if you kniw prople will skin your webpage. to make a word italic for style you use css coding.
             
         </body><br>
      
     </head>
-    <body>  <p>
+    <body class="body">  <p>
         <img src="https://www.google.com/search?q=orcinus+orca&rlz=1C1GCEJ_enUS914US914&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjp-q2HwcjsAhXBxVkKHSKtCcEQ_AUoAXoECAwQAw&safe=active&ssui=on#imgrc=XG5IV_ZYXuW9hM"></img>
 <em>shaarav</em> is the <strong>best</strong></p>
     </body>
     <head>
      <h3 class= "story-heading3">the diffrent headings</h3>  
     </head>
-    <body>
+    <body class="body">
         &lth1&gt is for tittles(& the most important stuff)<br>
         &lth2&gt is for subttitels & less mportant stuff<br>
         &lth3&gt is for not so important things<br>
@@ -125,7 +125,7 @@ function intro(){
         
             <h3 id= "story-heading4">links</h3>
         
-        <body>
+        <body class="body">
             for links you use &lta&gt and then &lt/a&gt. you make a link by typing hreif and then a equal sign and then the link. And then the name of the link after this &lt. this is mine.<br>
             <a target="_blank" href="https://docs.google.com/document/d/11nPqN7_3nLAoWOT7H9sCzM5o_dYQxKnc_-giqIiTp6Y/edit?invite=CKW2udQH&ts=5f693bb1#m">shaarav & neevs book so far!!!!</a><br>
             <a target="_blank" href="https://edu.google.com/products/jamboard/?modal_active=none">have you ever seen google jamboard?</a><br>
@@ -148,24 +148,16 @@ function intro(){
             for more learning go to<a href="https://www.khanacademy.org/computing/computer-programming"> khan academy</a>
                             
                             </p>
-<script>                            
-var dancer1;
-var dancer2;
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"><script>                            
 
-whenSetup(function () {
-  setBackgroundEffectWithPalette("fireworks", "rave");
-  makeNewDanceSpriteGroup(9, "ALIEN", "circle");
-  changeMoveEachLR("ALIEN", "rand", -1);
-  makeNewDanceSprite("MOOSE", 'dancer1', {x: 200, y: 200});
-  changeMoveLR('dancer1', "rand", -1);
-  setForegroundEffectExtended("confetti");
-  makeNewDanceSprite("CAT", 'dancer2', {x: 200, y: 100});
-});
-
-everySeconds(4, "measures", function () {
-  changeMoveLR('dancer1', "rand", -1);
-  changeMoveLR('dancer2', "rand", -1);
-});
+                            <script>
+                            var $title = $("#story-title");
+                            $body = $(".body");
+                            $title.hide();
+                            $body.hide();
+                            $title.slideDown(3000, function(){
+                            $body.slideDown(3000)
+                            });
                             </script>
                             </body>
                             </html>
