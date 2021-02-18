@@ -11,10 +11,6 @@ $(document).ready(function(){
    }); 
             
 });
-echo ":github: Bearer GH_TOKEN" >> ~/.gem/credentials
-gem build refactored-adventure.gemspec
-gem push --key github --host https://rubygems.pkg.github.com/reaper787 refactored-adventure-1.0.0.gem
-
 
             var dancer1;
 var dancer2;
